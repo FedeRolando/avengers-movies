@@ -1,0 +1,241 @@
+/* Vars */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-none * {
+  display: none;
+}
+
+body {
+  max-width: 1250px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .navbar-brand {
+  margin: 0;
+  font-size: 1.7rem;
+  letter-spacing: 4px;
+}
+
+main {
+  position: relative;
+}
+
+main #sectionMovies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 15px 10px;
+}
+
+main #sectionMovies .movie {
+  max-width: 220px;
+  max-height: 314px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+main #sectionMovies .movie img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main #modalMovie {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+main #modalMovie #modalContent {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 95vh;
+  width: 90%;
+  max-width: 600px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0 0 15px 0;
+  overflow: auto;
+  background-color: #375a7f;
+  border: 2px solid;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  grid-row-gap: 5px;
+}
+
+main #modalMovie #modalContent .divCloseModal {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  /* border-bottom: 1px solid; */
+  background-color: #222222;
+}
+
+main #modalMovie #modalContent .divCloseModal .closeModal {
+  padding: 0 10px;
+  font-size: 1.2rem;
+  border: 1px solid;
+  cursor: pointer;
+  margin: 3px 8px 4px 0;
+}
+
+main #modalMovie #modalContent #movieTitle {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+main #modalMovie #modalContent .cl1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+main #modalMovie #modalContent .cl1 #movieImg {
+  max-width: 90%;
+}
+
+main #modalMovie #modalContent .cl1 #btnWatch {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+main #modalMovie #modalContent #sinopsis {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #modalMovie #modalContent #sinopsis h3 {
+  width: 90%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main #modalMovie #modalContent #sinopsis p {
+  max-width: 90%;
+}
+
+main #modalMovie #modalContent #sinopsis p:last-child {
+  margin: 0;
+}
+
+main #modalMovie #modalContent video {
+  width: 100%;
+  max-height: 300px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+@media (max-width: 505px) {
+  main #sectionMovies .movie {
+    max-width: 200px;
+    max-height: 294px;
+  }
+  main #modalMovie #modalContent .cl1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+  }
+  main #modalMovie #modalContent #sinopsis {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+  }
+}
+
+@media (max-width: 465px) {
+  main #sectionMovies .movie {
+    max-width: 320px;
+    max-height: 414px;
+    margin: 8px 5px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

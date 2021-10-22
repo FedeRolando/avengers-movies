@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-5.1.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar-dark bg-primary">
+      <a class="navbar-brand" href="index.html">Avengers Movies</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sectionMovies">
+    </section>
+
+    <div id="modalMovie" class="d-none">
+      <div id="modalContent">
+        <div class="divCloseModal">
+          <span class="closeModal">X</span>
+        </div>
+        <h2 id="movieTitle"></h2>
+        <div class="cl1">
+          <img id="movieImg" class="img-fluid" src="" alt="">
+          <button id="btnWatch" class="btn btn-lg btn-warning">VER PELICULA</button>
+        </div>
+        <div id="sinopsis"></div>
+        <video id="video" class="d-none" controls></video>
+      </div>
+    </div>
+  </main>
+
+  <script type="text/javascript" src="bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/movies.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

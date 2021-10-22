@@ -108,11 +108,11 @@ main {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				gap: 15px;
 				#movieImg {
 					max-width: 90%;
 				}
 				#btnWatch {
+					margin: 15px 0;
 					font-weight: bold;
 					letter-spacing: 2px;
 				}

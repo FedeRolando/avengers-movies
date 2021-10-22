@@ -163,7 +163,6 @@ main #modalMovie #modalContent .cl1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 15px;
 }
 
 main #modalMovie #modalContent .cl1 #movieImg {
@@ -171,6 +170,7 @@ main #modalMovie #modalContent .cl1 #movieImg {
 }
 
 main #modalMovie #modalContent .cl1 #btnWatch {
+  margin: 15px 0;
   font-weight: bold;
   letter-spacing: 2px;
 }

@@ -19,7 +19,7 @@ const vengadoresInfinityWar = {
   year: 2018,
   sinopsis: "<p>Infinity War crea un viaje cinematográfico sin precedentes durante diez años y que abarca todo el Universo Marvel. Trae a la pantalla el enfrentamiento definitivo y más sangriento de todos los tiempos.</p><p>Los Vengadores y sus superhéroes deben estar dispuestos a sacrificar todo en un intento de derrotar al poderoso Thanos, antes de que sus planes de devastación y ruina pongan fin al universo.</p>",
   img: "img/movies/vengadores-InfinityWar-min.png",
-  video: "video/vengadores-InfinityWar.mp4"
+  video: "video/vengadores-infinityWar.mp4"
 }
 
 const vengadoresEndgame = {

@@ -1,6 +1,7 @@
 const d = document,
 c = console;
 
+//DOM vars
 const $sectionMovies = d.getElementById("sectionMovies"),
 $modalMovie = d.getElementById("modalMovie"),
 $modalContent = d.getElementById("modalContent"),
@@ -30,7 +31,6 @@ d.addEventListener("DOMContentLoaded",()=>{
       $cl1.classList.remove("d-none");
       $sinopsis.innerHTML = `<h3>Sinopsis</h3> ${i.sinopsis}`;
       $sinopsis.classList.remove("d-none");
-
       $modalMovie.classList.remove("d-none");
     })
     fragment.appendChild(movie);
